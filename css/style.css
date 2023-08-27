@@ -1,0 +1,498 @@
+/* Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+
+:root{
+    --blue:#001E6C;
+    --yellow:#FF9B00;
+    --skyBlue:#035397;
+    --gray:#455A64;
+}
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0%;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    font-size: 63%;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* utils  */
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head{
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+    width: 34rem;
+    margin: auto;
+}
+.head::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 2px;
+    margin: auto;
+    left: 25%;
+    border-bottom: 3px solid rgb(11, 11, 11);
+}
+.p-head{
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+.p-secondary{
+    font-size: 0.8rem;
+    color:var(--gray);
+}
+button{
+    cursor: pointer;
+}
+
+/* ---- Css by selecting elements ----  */
+
+/* Nav bar Section  */
+#navbar{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    /* height: 20vh; */
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+}
+#nav{
+    width: 90%;
+    margin: auto;
+}
+#nav img{
+    width: 6.5rem;
+    height: 2.7rem;
+}
+#nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    margin: 0em 1rem;
+    font-weight: 500;
+}
+nav button{
+    background-color: var(--blue);
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.6rem 1rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 0.5rem;
+    border: none;
+}
+#nav .act{
+    color: #001E6C;
+}
+#mobNav{
+    display: none;
+}
+
+/* Home section */
+section#home{
+    width: 90%;
+    /* height: 60vh; */
+    overflow-y: hidden;
+    margin: 1rem auto;
+}
+#home>div{
+    width: 45%;
+}
+#home>div h2{
+    font-size: 3.3rem;
+}
+#home>div h2 span{
+    font-size: 3.3rem;
+    color: var(--yellow);
+}
+#home>div button{
+    color: white;
+    background-color: var(--blue);
+    font-size: 1.1rem;
+    padding: 0.6rem 1rem;
+    margin: 2rem 0;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+#home>img{
+    display: block;
+    width: 50%;
+    }
+
+/* stat section */
+section#record{
+    width: 100%;
+    /* height: 20vh; */
+    background-color: #001E6C;
+}
+div#stat{
+    width: 90%;
+    margin: auto;
+    height: 20vh;
+    color: white;
+    padding: 0rem 7rem;
+    box-sizing: border-box;
+}
+#stat h3{
+    font-size: 2rem;
+}
+
+/* feature section  */
+section#feature{
+    width: 90%;
+    margin: auto;
+    /* height: 80vh; */
+    padding: 3rem 0;
+    box-sizing: border-box;
+}
+#feature span{
+    color: var(--yellow);
+    text-align: center;
+    font-size: 1rem;
+}
+#feature>p{
+    font-size: 1.6rem;
+    text-align: center;
+}
+#feature>p a{
+    color: var(--blue);
+    font-weight: 700;
+}
+#feature div div{
+    width: 30%;
+    padding: 3rem 0;
+}
+
+
+/* Courses Section  */
+#courses{
+    width: 90%;
+    margin: auto;
+}
+#courses>div{
+    margin: 4rem 0;
+}
+.course-container{
+    width: 26%;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    box-shadow: 0.5px 0.5px 8px 5px rgba(128, 128, 128, 0.359);
+}
+.course-container img{
+    width: 100%;
+    height: 12rem;
+}
+.course-cat{
+    font-size: 0.6rem;
+    display: inline;
+    padding: 4px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(192, 192, 192, 0.452);
+    margin: 2px;
+}
+.p-head1{
+    font-size: 1.1rem;
+    margin: 2px 0;
+}
+.live{
+    color: #455A64;
+    font-size: 0.8rem;
+}
+.live svg{
+    height: 1rem;
+    width: 1.2rem;
+}
+.lecture{
+    color: #FF9B00;
+}
+.advance{
+    color: var(--skyBlue);
+    font-size: 0.8rem;
+    margin: 8px 1px;
+}
+.advance svg{
+    height: 1rem;
+    width: 1rem;
+}
+.ratting{
+    font-size: 0.9rem;
+}
+.ratting span{
+    color: #FF9B00;
+    font-weight: 800;
+}
+.course-container a{
+    border: 1px solid var(--gray);
+    color: #455A64;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 0.6rem;
+    padding: 2px 4px;
+}
+#courses>button{
+    border: 3px solid var(--yellow);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: var(--yellow);
+    display: block;
+    width: 25%;
+    margin: 8rem auto;
+    padding: 0.5rem 0.3rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif; 
+    background-color: white;
+}
+.course-container button{
+    width: 100%;
+    background-color: var(--blue);
+    color: white;
+    padding: 0.5rem 0.5rem;
+    font-family: 'Poppins', sans-serif; 
+    border: none;
+    border-radius: 8px;
+    margin: 1rem 0;
+    margin-bottom: 0;
+}
+
+
+/* Vission section  */
+section#vission{
+    width: 85%;
+    margin: auto;
+    color: #455A64;
+    padding: 3rem 1rem;
+    box-sizing: border-box;
+    box-shadow: 5px 4px 14px 11px rgba(78, 78, 78, 0.406);
+    border-radius: 25px;
+}
+div#our-vission{
+    font-size: 2.7rem;
+    text-align: center;
+    width: 25%;
+}
+div#vission-content{
+    width: 75%;
+    padding: 1.6rem 1.4rem;
+    font-size: 1.15rem;
+    border-left: 4px solid black;
+}
+
+
+/* More on Section  */
+section#more-on{
+    width: 90%;
+    margin: 6rem auto;
+}
+#more-on h4{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+#more-on .p-secondary{
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+#left{
+    width: 50%;
+}
+#left button{
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 0.6rem;
+    width: 43%;
+    margin: 1rem 0;
+    padding: 0.6rem 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+#right{
+    width: 50%;
+    height: 22rem;
+    background-color: #001E6C;
+}
+
+
+/* #Our-lerners  */
+#learners{
+    width: 90%;
+    margin: auto;
+}
+#learners #container{
+    margin: 2rem 0;
+    /* height: 60vh; */
+}
+#container .boxes{
+    width: 40%;
+    background-color: #b5b5b57a;
+    padding: 2rem;
+    border-radius: 20px;
+}
+.boxes>div{
+    display: flex;
+}
+.boxes>p{
+    font-size: 1rem;
+    margin: 1rem 2rem;
+    margin-right: 0%;
+}
+
+
+/* Join section  */
+#join{
+    width: 90%;
+    margin: 2rem auto;
+    padding: 4rem 4.5rem;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: var(--blue);
+}
+#join div{
+    width: 75%;
+}
+#join h3{
+    font-size: 2.5rem;
+    color: white;
+}
+#join p{
+    font-size: 1.1rem;
+}
+#join button{
+    width: 20%;
+    background-color: #FF9B00;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+    border: none;
+    border-radius: 8px;
+}
+
+/* Footer  */
+footer{
+    width: 100%;
+    background-color: #b5b5b57a;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+#fl{
+    width: 45%;
+}
+#fl img{
+    width: 5.5rem;
+    height: 3.5rem;
+}
+#fl div{
+    margin: 2rem 0;
+}
+#fl p{
+    font-size: 1rem;
+}
+#fl svg{
+    width: 3rem;
+}
+#contains{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+#fm{
+    width: 50%;
+}
+#fm p{
+    font-size: 1rem;
+    color: var(--gray);
+}
+#fm .p-head{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+}
+#fr{
+    width: 50%;
+}
+#fr p{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+#fr svg{
+    width: 2rem;
+    height: 2rem;
+}
+#fr .p-head{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+}
+footer>p{
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--gray);
+}
+
+/* Media querry  */
+@media only screen 
+and (min-width: 480px) 
+and (max-width: 810px) {
+    html {
+        font-size: 10px;
+    }
+    .p-head1 {
+        font-size: 0.9rem;
+        margin: 2px 0;
+    }
+    .advance {
+        color: var(--skyBlue);
+        font-size: 0.8rem;
+        margin: 3px 1px;
+    }
+    .ratting{
+        font-size: 0.6rem;
+    }
+    #courses>button{
+        width: 27%;
+    }
+    #container .boxes{
+        width: 55%;
+    }
+    #left button{
+        width: 50%;
+    } 
+    section#vission {
+        width: 90%;
+        margin: auto;
+        color: #455A64;
+        padding: 1rem 1rem;
+        box-sizing: border-box;
+        box-shadow: 5px 4px 14px 11px rgb(78 78 78 / 41%);
+        border-radius: 25px;
+    }
+    #fr svg{
+        width: 1rem;
+    }
+}

@@ -1,0 +1,224 @@
+/* Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+
+:root{
+    --blue:#001E6C;
+    --yellow:#FF9B00;
+    --skyBlue:#035397;
+    --gray:#455A64;
+}
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0%;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    font-size: 50%;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* utils  */
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.p-head{
+    font-size: 1.2rem;
+}
+.p-secondary{
+    font-size: 0.8rem;
+    color:var(--gray);
+}
+button{
+    cursor: pointer;
+}
+
+/* ---- Css by selecting elements ----  */
+
+#navbar{
+    display: none;
+}
+#mobNav{
+    width: 95%;
+    margin: auto;
+}
+#menu{
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    font-size: 1.5rem;
+}
+#hamburger{
+    position: fixed;
+    right: -100%;
+    top: 0%;
+    height: 100vh;
+    /* display: none; */
+    padding: 1rem 1rem;
+    padding-top: 2rem;
+    transition: all linear 0.5s;
+    background-color: #FF9B00;
+}
+#close{
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    font-size: 1.5rem;
+}
+#hamburger a{
+    display: block;
+    font-size: 1.3rem;
+    /* color: black; */
+    color: #001E6C;
+    border-bottom: 2px solid #001E6C;
+    text-decoration: none;
+    margin: 1rem 0;
+    font-weight: 600;
+}
+
+/* About section  */
+section#about{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.333),rgba(21, 21, 21, 0.514)), url("/img/about.jpg");
+    background-size: cover;
+    margin: 2rem auto;
+}
+.head{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+#about>div{
+    width: 90%;
+    margin: auto;
+    color: white;
+}
+#about img{
+    display: none;
+}
+#about .a-text{
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem 0;
+    padding-left: 0%;
+}
+
+/* Vission section  */
+section#vission{
+    width: 85%;
+    margin: 4rem auto;
+    color: #455A64;
+    padding: 1rem;
+    box-sizing: border-box;
+    box-shadow: 5px 4px 14px 11px rgba(78, 78, 78, 0.406);
+    border-radius: 25px;
+}
+div#our-vission{
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+div#vission-content{
+    width: 90%;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-left: 4px solid black;
+}
+
+
+/* Aim section  */
+section#aim{
+    width: 90%;
+    margin: 5rem auto;
+    text-align: center;
+}
+#aim p{
+    font-size: 2rem;
+    font-weight: 500;
+}
+#aim li{
+    width: 90%;
+    text-align: left;
+    margin: 0.4rem auto;
+    font-size: 1rem;
+}
+
+/* Footer  */
+footer{
+    width: 100%;
+    background-color: #b5b5b57a;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+#fl{
+    width: 50%;
+}
+#fl img{
+    width: 85px;
+    height: 40px;
+}
+#fl div{
+    margin: 2rem 0;
+}
+#fl p{
+    font-size: 0.6rem;
+}
+#fl svg{
+    width: 1.22rem;
+}
+#contains{
+    width: 45%;
+}
+#fm{
+    width: 100%;
+}
+#fm p{
+    font-size: 0.6rem;
+    color: var(--gray);
+}
+#fm .p-head{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+    color: black;
+}
+#fr{
+    width: 100%;
+}
+#fr p{
+    /* display: inline-flex; */
+    align-items: center;
+    font-size: 0.6rem;
+    color: var(--gray);
+    /* margin-bottom: 1rem; */
+}
+#fr svg{
+    width: 1rem;
+    height: 1rem;
+}
+#fr .p-head{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+    color: black;
+}
+footer>p{
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--gray);
+}
+

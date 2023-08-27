@@ -1,0 +1,236 @@
+/* Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+
+:root{
+    --blue:#001E6C;
+    --yellow:#FF9B00;
+    --skyBlue:#035397;
+    --gray:#455A64;
+}
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0%;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    font-size: 50%;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* utils  */
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.p-head{
+    font-size: 1.2rem;
+}
+.p-secondary{
+    font-size: 0.8rem;
+    text-align: center;
+}
+button{
+    cursor: pointer;
+}
+
+/* ---- Css by selecting elements ----  */
+#navbar{
+    display: none;
+}
+#mobNav{
+    width: 95%;
+    margin: auto;
+}
+#menu{
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    font-size: 1.5rem;
+}
+#hamburger{
+    position: fixed;
+    right: -100%;
+    top: 0%;
+    height: 100vh;
+    /* display: none; */
+    padding: 1rem 1rem;
+    padding-top: 2rem;
+    transition: all linear 0.5s;
+    background-color: #FF9B00;
+}
+#close{
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    font-size: 1.5rem;
+}
+#hamburger a{
+    display: block;
+    font-size: 1.3rem;
+    /* color: black; */
+    color: #001E6C;
+    border-bottom: 2px solid #001E6C;
+    text-decoration: none;
+    margin: 1rem 0;
+    font-weight: 600;
+}
+
+/* Home section */
+section#home{
+    width: 100%;
+    overflow-y: hidden;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    background-image: linear-gradient(45deg,rgba(26, 24, 24, 0.338),rgba(19, 19, 19, 0.593),rgba(0, 0, 0, 0.341)), url("/img/comm.jpg");
+    background-size: cover;
+}
+#home div{
+    width: 90%;
+    margin: auto;
+    color: white;
+}
+
+#home>div h2{
+    font-size: 2rem;
+    text-align: center;
+}
+#home>div h2 span{
+    font-size: 2rem;
+    color: var(--blue);
+}
+#home>div button{
+    color: white;
+    background-color: var(--blue);
+    font-size: 1.1rem;
+    padding: 0.6rem 1rem;
+    margin: 2rem 0;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+#home>img{
+    display: none;
+    }
+
+#icon svg{
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 2.5rem;
+        color: var(--gray);
+    }   
+
+/* Form  */
+form{
+    width: 85%;
+    margin: auto;
+}
+label{
+    font-weight: 500;
+    font-size: 1rem;
+    display: block;
+}
+input,textarea{
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: inherit;
+    width: 100%;
+    margin-bottom:1rem;
+    padding: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+#form button{
+    margin: 1em 0em;
+    color: white;
+    background-color: var(--blue);
+    width: 46%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8em;
+    border: none;
+    padding: 0.7em 1em;
+    border-radius: 0.4em;
+}
+
+
+/* Footer  */
+footer{
+    width: 100%;
+    background-color: #b5b5b57a;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+#fl{
+    width: 50%;
+}
+#fl img{
+    width: 85px;
+    height: 40px;
+}
+#fl div{
+    margin: 2rem 0;
+}
+#fl svg{
+    width: 1.22rem;
+}
+#fl p{
+    font-size: 0.6rem;
+    text-align: left;
+}
+#fl svg{
+    width: 2rem;
+}
+#contains{
+    width: 45%;
+}
+#fm{
+    width: 100%;
+}
+#fm p{
+    font-size: 0.6rem;
+    color: var(--gray);
+}
+#fm .p-head{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+    color: black;
+}
+#fr{
+    width: 100%;
+}
+#fr p{
+    /* display: inline-flex; */
+    align-items: center;
+    font-size: 0.6rem;
+    color: var(--gray);
+    /* margin-bottom: 1rem; */
+}
+#fr svg{
+    width: 1rem;
+    height: 1rem;
+}
+#fr .p-head{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+    color: black;
+}
+footer>p{
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--gray);
+}
